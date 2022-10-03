@@ -1,3 +1,6 @@
+html {
+    height: 100%;
+}
 *{
     background-color: #96f2e9;
     color: #532820;
@@ -12,12 +15,13 @@ body{
     font-size: 20px;
 }
 header {
-    margin-top: 32px ;
+    margin: 32px ;
     text-align: center;      
 }
 .img-triangulo{
     display: flex;
     flex-direction : row;
+    justify-content:center;
     align-items: center;
     transition: .3s ease all;
  
@@ -25,7 +29,8 @@ header {
 .medidas-lados{
     width: 100%;
     height: auto;
-    padding: 30px 30px;
+    padding: 30px;
+    margin: 15px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;    
@@ -35,7 +40,9 @@ header {
     height: 100%;
     border-radius: 5px;
     border: 1px solid;
+    font-size: 18px;
 }
+
 #btn-calcular:hover{
     opacity: 0.5;
 }
@@ -79,16 +86,10 @@ header {
 }
 
 
-@media screen and (max-width: 700px) {
-    header .container{
+@media screen and (min-width: 768px) {
+    html {
         display: flex;
         flex-direction: column;
-    }
-
-    .botao{
-        margin-top: 5px;
-        width: 300px;
-    
     }
 }
 
