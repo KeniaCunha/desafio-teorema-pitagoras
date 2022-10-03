@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en"> 
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;900&display=swap" rel="stylesheet">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pythagoras Calculator</title>
+
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <h2>Pythagoras Calculator</h2>
+            </div>
+        </header>
+        <main>
+            <section>
+                <div class="img-triangulo">
+                    <img src="img/triangulo-retangulo.png" alt="Imagem do triangulo triangulo-retangulo">
+                    <h4>“O quadrado da medida da hipotenusa é igual a soma do quadrado das medidas dos catetos”</h4> 
+                </div>
+                <div class="medidas-lados">
+                    <div>
+                        <label>Medida da hipotenusa: </label>
+                        <input type="text" id="hipotenusa" maxlength="4" size="4"/>
+                    </div> 
+                    <div>
+                        <label>Medida do cateto adjacente: </label>
+                        <input type="text" id="catetoA" maxlength="4" size="4"/>    
+                    </div>   
+                    
+                    <div>
+                        <label>Medida do cateto oposto: </label>
+                        <input type="text" id="catetoB" maxlength="4" size="4"/>
+                    </div>                    
+                </div>
+                <div class="botao">
+                    <button id="btn-calcular" onclick="calculaTeorema()">CALCULAR</button>
+                    <button id="btn-apagar" onclick="limpaCampos()">APAGAR</button>
+                </div>
+                <div class="resolucao">
+                    <h3 id="retorno"></h3>
+                    <h3 id="resposta"></h3>                   
+                </div>
+            </section>           
+        </main>
+       <script src="scripts.js"></script>
+    </body>
+</html>
